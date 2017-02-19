@@ -54,7 +54,6 @@ export default class FavouriteList extends React.Component<any, any> {
     this.props.actions.deletePhotoAction(this.state.deleted)
   }
   render() {
-    console.log(this.state.deleted)
   return (
     <div>
       <div className="header">{this.state.clicked && this.state.deleted.length != this.props.saved.length ?

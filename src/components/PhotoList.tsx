@@ -55,7 +55,6 @@ export default class PhotoList extends React.Component<any, any>{
         this.setState({
           selected: newList
         })
-        console.log('there')
       } else {
         e.target.parentElement.classList.add('chosen')
         this.setState({
@@ -89,7 +88,6 @@ export default class PhotoList extends React.Component<any, any>{
 
 
   render() {
-    console.log(this.props.error, this.props.status)
     return (
       <div>
         <div className="header">{this.state.selected.length >= 1 && this.state.clicked ?
